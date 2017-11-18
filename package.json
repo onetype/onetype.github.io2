@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/onetype/onetype.github.io#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "husky": "^0.14.3",
     "node-sass": "^4.7.1",
     "sass-lint": "^1.12.1"

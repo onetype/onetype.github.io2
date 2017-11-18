@@ -8,7 +8,8 @@
     "precommit": "npm t",
     "lint:js": "eslint **/*.js",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
-    "test": "npm run -s lint:sass && npm run -s lint:js"
+    "pretest": "npm run -s lint:sass && npm run -s lint:js",
+    "test": "mocha tests/**.js"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,10 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
     "eslint": "^4.11.0",
     "husky": "^0.14.3",
+    "mocha": "^4.0.1",
     "node-sass": "^4.7.1",
     "sass-lint": "^1.12.1"
   }

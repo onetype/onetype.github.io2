@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+@import 'true';
+
+// Components
+@import '../../_sass/functions/color.white';
+
+// Unit Tests
+@import './white.spec';
+
+@include report;

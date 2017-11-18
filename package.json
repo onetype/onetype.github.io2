@@ -7,13 +7,15 @@
   "scripts": {
     "precommit": "npm t",
     "predocs": "rimraf docs",
-    "coverage:all": "nyc --reporter=lcov --reporter=html --reporter=text-summary",
+    "precoverage": "rimraf coverage",
+    "coverage": "nyc --reporter=lcov --reporter=html --reporter=text-summary",
+    "coverage:push": "cat ./coverage/lcov.info | codecov",
     "docs:sass": "sassdoc _sass/",
     "docs": "npm run -s docs:sass",
     "lint:js": "eslint tests/**.js",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "pretest": "npm run -s lint:sass && npm run -s lint:js",
-    "test": "npm run -s coverage:all -- mocha tests/**.spec.js --require babel-register"
+    "test": "npm run -s coverage -- mocha tests/**.spec.js --require babel-register"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
+    "codecov": "^3.0.0",
     "eslint": "^4.11.0",
     "husky": "^0.14.3",
     "mocha": "^4.0.1",

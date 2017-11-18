@@ -9,7 +9,7 @@
     "lint:js": "eslint **/*.js",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "pretest": "npm run -s lint:sass && npm run -s lint:js",
-    "test": "mocha tests/**.js"
+    "test": "mocha tests/**.js --require babel-register"
   },
   "repository": {
     "type": "git",

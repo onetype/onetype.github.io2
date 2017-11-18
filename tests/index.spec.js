@@ -1,8 +1,8 @@
-const expect = require('chai').expect;
-const author = require('../src/index');
+import { expect } from 'chai';
+import author from '../src/index';
 
-describe('One Type', function () {
-  it('Technical Publications by Yair', function () {
+describe('One Type', () => {
+  it('Technical Publications by Yair', () => {
     const actual = author();
     const expected = 'Yair';
 

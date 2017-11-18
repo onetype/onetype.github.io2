@@ -6,6 +6,9 @@
   "private": true,
   "scripts": {
     "precommit": "npm t",
+    "predocs": "rimraf docs",
+    "docs:sass": "sassdoc _sass/",
+    "docs": "npm run -s docs:sass",
     "lint:js": "eslint **/*.js",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "pretest": "npm run -s lint:sass && npm run -s lint:js",
@@ -37,7 +40,10 @@
     "husky": "^0.14.3",
     "mocha": "^4.0.1",
     "node-sass": "^4.7.1",
+    "rimraf": "^2.6.2",
     "sass-lint": "^1.12.1",
-    "sass-true": "^3.0.2"
+    "sass-true": "^3.0.2",
+    "sassdoc": "^2.5.0",
+    "sassdoc-theme-neat": "0.0.2"
   }
 }

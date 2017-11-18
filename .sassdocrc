@@ -1,0 +1,15 @@
+basePath: "https://github.com/onetype/onetype.github.io"
+dest: "docs/sass"
+display:
+  access: ["private", "public"]
+  alias: true
+  watermark: true
+package:
+  title: "One Type Docs"
+  name: "onetype-docs"
+  version: "0.1.0"
+  license: "Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License"
+  homepage: "https://onetype.org"
+theme: "neat"
+groups:
+  undefined: Ungrouped

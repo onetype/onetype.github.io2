@@ -4,18 +4,18 @@
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
-  // sass-lint:disable indentation
-  src: url('../assets/fonts/gilroy/gilroy-extrabold-webfont.woff2') format('woff2'),
-       url('../assets/fonts/gilroy/gilroy-extrabold-webfont.woff') format('woff');
-  // sass-lint:enable indentation
+  // sass-lint:disable indentation, no-url-domains, no-url-protocols
+  src: url('https://storage.googleapis.com/agzeri/gilroy/gilroy-extrabold-webfont.woff2') format('woff2'),
+       url('https://storage.googleapis.com/agzeri/gilroy/gilroy-extrabold-webfont.woff') format('woff');
+  // sass-lint:enable indentation, no-url-domains, no-url-protocols
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 900;
-  // sass-lint:disable indentation
-  src: url('../assets/fonts/gilroy/gilroy-heavy-webfont.woff2') format('woff2'),
-       url('../assets/fonts/gilroy/gilroy-heavy-webfont.woff') format('woff');
-  // sass-lint:enable indentation
+  // sass-lint:disable indentation, no-url-domains, no-url-protocols
+  src: url('https://storage.googleapis.com/agzeri/gilroy/gilroy-heavy-webfont.woff2') format('woff2'),
+       url('https://storage.googleapis.com/agzeri/gilroy/gilroy-heavy-webfont.woff') format('woff');
+  // sass-lint:enable indentation, no-url-domains, no-url-protocols
 }

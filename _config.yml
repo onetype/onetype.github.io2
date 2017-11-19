@@ -1,0 +1,11 @@
+title:        "One Type"
+description:  "Technical Publications about Computer Science and Software Engineering."
+baseurl:      "/"
+url:          "https://onetype.org"
+author:
+  name: "Yair Rodriguez"
+  handler: "agzeri"
+
+# Build settings
+markdown: kramdown
+theme: minima

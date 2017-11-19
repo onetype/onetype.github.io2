@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/gilroy/gilroy-extrabold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/gilroy/gilroy-extrabold-webfont.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/gilroy/gilroy-heavy-webfont.woff2') format('woff2'),
+       url('../assets/fonts/gilroy/gilroy-heavy-webfont.woff') format('woff');
+  // sass-lint:enable indentation
+}

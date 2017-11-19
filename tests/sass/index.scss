@@ -2,10 +2,14 @@
 
 @import 'true';
 
+@import '../../_sass/theme/palette';
+
 // Components
 @import '../../_sass/functions/color.white';
+@import '../../_sass/functions/palette';
 
 // Unit Tests
 @import './white.spec';
+@import './palette.spec';
 
 @include report;

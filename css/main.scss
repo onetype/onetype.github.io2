@@ -1,0 +1,14 @@
+---
+# One Type Main Styles File
+---
+
+@charset 'utf-8';
+
+@import 'theme/palette';
+@import 'theme/setup';
+@import 'theme/fonts';
+
+@import 'functions/color.white';
+@import 'functions/palette';
+
+@import 'components/home';

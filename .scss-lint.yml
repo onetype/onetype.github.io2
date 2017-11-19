@@ -28,7 +28,7 @@ rules:
   no-misspelled-properties: 2
   no-qualifying-elements: 2
   no-trailing-whitespace: 2
-  no-trailing-zero: 2
+  no-trailing-zero: 0
   no-transition-all: 2
   no-universal-selectors: 0
   no-url-protocols: 2

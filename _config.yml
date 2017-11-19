@@ -1,7 +1,7 @@
 title:        "One Type"
 description:  "Technical Publications about Computer Science and Software Engineering."
-baseurl:      "/"
-url:          "https://onetype.org"
+baseurl:      ""
+url:          "https://agzeri.github.io"
 author:
   name: "Yair Rodriguez"
   handler: "agzeri"

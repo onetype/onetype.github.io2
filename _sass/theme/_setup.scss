@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

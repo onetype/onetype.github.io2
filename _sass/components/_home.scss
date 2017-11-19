@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+.home {
+  padding: 40px;
+
+  &__container {
+    background-color: palette(akaroa);
+    display: flex;
+    height: calc(100vh - 80px);
+  }
+
+  &__left,
+  &__right {
+    height: inherit;
+    width: 50%;
+  }
+
+  &__right {
+    background-color: palette(alabaster);
+  }
+}
+
+.title {
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-font-smoothing: antialiased;
+  // sass-lint:disable no-vendor-prefixes
+  font-family: 'Gilroy';
+  font-size: 180px;
+  font-weight: 900;
+  left: calc(50% - 136px);
+  line-height: 0.85;
+  margin: 0;
+  position: absolute;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &__dot {
+    color: palette(akaroa);
+  }
+}

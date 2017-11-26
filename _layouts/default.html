@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype='http://schema.org/Website' itemid='{{ site.url | append: page.url }}'>
+<html itemscope itemtype='http://schema.org/WebSite' itemid='{{ site.url | append: page.url }}'>
 <head>
   <meta charset='utf-8' />
   <title>{% if page.headline %}{{ page.headline }}{% else %}{{ site.title }}{% endif %}</title>
@@ -7,15 +7,17 @@
   <meta name='viewport' content='width=device-width,minimum-scale=1,initial-scale=1' />
   <meta name='mobile-web-app-capable' content='yes'>
   <link rel='stylesheet' href='https://necolas.github.io/normalize.css/5.0.0/normalize.css'>
-  <link rel='stylesheet' href='{{ site.url }}/css/{% if page.custom-css %}{{ page.custom-css }}{% else %}{{ 'main' }}{% endif %}.css' />
+  <link rel='stylesheet' href="{{ site.url }}/css/{% if page.custom-css %}{{ page.custom-css }}{% else %}{{ 'main' }}{% endif %}.css" />
   <style>
-    #WebsitePublisher {
+    [id='WebsitePublisher'] {
       display: none;
     }
   </style>
+  {% include seo.html %}
 </head>
 <body>
   <div id='WebsitePublisher' itemprop='publisher' itemtype='http://schema.org/Organization' itemscope=''>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>
     <em itemprop='name'>{{ site.author.name }}</em>
     <figure itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
       <img itemprop='url' src='{{ site.url }}/images/logo.png' alt='The Grid Report Logo' />
